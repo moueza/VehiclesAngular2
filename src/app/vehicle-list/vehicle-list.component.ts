@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Vehicle } from '../model/vehicle';
+
 
 @Component({   moduleId: module.id,
       selector: 'app-vehicles-list',
@@ -20,4 +22,6 @@ export class VehiclesListComponent implements OnInit {
   }
   ngOnInit() {
   }
+
+  vehicles: Vehicle[];
 }
