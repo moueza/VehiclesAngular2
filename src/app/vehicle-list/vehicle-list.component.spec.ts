@@ -5,10 +5,20 @@ import { DebugElement } from '@angular/core';
 
 import { VehicleListComponent } from './vehicle-list.component';
 
+
+
+
+
+import { VehicleService } from './vehicle.service';//moi
+
 describe('VehicleListComponent', () => {
   let component: VehicleListComponent;
   let fixture: ComponentFixture<VehicleListComponent>;
 
+
+  let component = new VehiclesListComponent(this._injector.get(VehicleService));//moi
+
+  
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ VehicleListComponent ]
