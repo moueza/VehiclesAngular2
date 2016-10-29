@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 
 import { Vehicle } from '../model/vehicle';
 
+import { VehicleService } from '../model/vehicle.service';
 
 @Component({   moduleId: module.id,
       selector: 'app-vehicles-list',
       templateUrl: 'vehicles-list.component.html',
-      styleUrls: ['vehicles-list.component.css'] })
+      styleUrls: ['vehicles-list.component.css'],
+      providers: [VehicleService] })
 
 
 
@@ -18,8 +20,11 @@ import { Vehicle } from '../model/vehicle';
 
 
 export class VehiclesListComponent implements OnInit {
-  constructor() {
+  constructor(private vehicleService: VehicleService) {
+    this.vehicles = this.vehicleService.getVehicles();
   }
+
+
   ngOnInit() {
   }
 
