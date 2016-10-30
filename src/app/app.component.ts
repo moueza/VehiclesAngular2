@@ -10,7 +10,7 @@ import { VehiclesListComponent} from './vehicles-list/vehicles-list.component';
       selector: 'vehicles-list',
       templateUrl: 'app.component.html',
       styleUrls: ['app.component.css'],
-     directives: [VehiclesListComponent], })
+    })
 export class AppComponent {
   title = 'Vehicle registry';
 }

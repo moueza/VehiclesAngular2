@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 
 
-
-import { Injectable } from '@angular/core';
 var vehicles = [ {     id:1,
 		       name:"Trailer - 1",
 		       type:"Truck",
