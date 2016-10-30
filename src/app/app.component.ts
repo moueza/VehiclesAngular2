@@ -11,6 +11,7 @@ import { VehiclesListComponent} from './vehicles-list/vehicles-list.component';
 
 
 
+
 @Component({   moduleId: module.id,
       selector: 'app-root',
       templateUrl: 'app.component.html',

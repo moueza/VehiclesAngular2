@@ -16,8 +16,6 @@ describe('VehicleListComponent', () => {
   let fixture: ComponentFixture<VehicleListComponent>;
 
 
-  let component = new VehiclesListComponent(this._injector.get(VehicleService));//moi
-
   
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -33,6 +31,9 @@ describe('VehicleListComponent', () => {
   });
 
   it('should create', () => {
+      
+  let component = new VehiclesListComponent(this._injector.get(VehicleService));//moi
+
     expect(component).toBeTruthy();
   });
 });
