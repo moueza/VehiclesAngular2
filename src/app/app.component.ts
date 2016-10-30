@@ -6,17 +6,11 @@ import { Component } from '@angular/core';
 
 import { VehiclesListComponent} from './vehicles-list/vehicles-list.component';
 
-
-
-
-
-
-
-@Component({   moduleId: module.id,
-      selector: 'app-root',
+ @Component({   moduleId: module.id,
+      selector: 'vehicles-list',
       templateUrl: 'app.component.html',
       styleUrls: ['app.component.css'],
-      directives: [VehiclesListComponent], })
+     directives: [VehiclesListComponent], })
 export class AppComponent {
   title = 'Vehicle registry';
 }
