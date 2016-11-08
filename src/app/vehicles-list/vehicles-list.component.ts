@@ -4,10 +4,11 @@ import { Vehicle } from '../model/vehicle';
 
 import { VehicleService } from '../model/vehicle.service';
 
-@Component({   moduleId: module.id,
+//TODO relative  moduleId: module.id,
+@Component({  
       selector: 'app-vehicles-list',
-      templateUrl: 'vehicles-list.component.html',
-      styleUrls: ['vehicles-list.component.css'],
+      templateUrl: 'app/vehicles-list/vehicles-list.component.html',
+      styleUrls: ['app/vehicles-list/vehicles-list.component.css'],
       providers: [VehicleService] })
 
 
